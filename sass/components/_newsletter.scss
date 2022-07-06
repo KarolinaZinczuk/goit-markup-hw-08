@@ -1,0 +1,62 @@
+.newsletter {
+  &__tittle {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+
+  &__input {
+    width: 450px;
+    height: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+    color: rgba(255, 255, 255, 0.6);
+    background-color: #2f303a;
+    padding-left: 16px;
+    margin-right: 12px;
+  }
+
+  // @media (min-width: 480px) and (max-width: 767px) {
+  //   &__input {
+  //   }
+  // }
+  // @media (min-width: 768px) and (max-width: 1200px) {
+  //   &__input {
+  //   }
+  // }
+  @media (min-width: 1200px) {
+    &__input {
+      width: 358px;
+    }
+  }
+
+  &__link {
+    position: absolute;
+    fill: #fff;
+    width: 24px;
+    height: 24px;
+    padding-left: 24px;
+    bottom: 13px;
+  }
+}
+
+// @media (min-width: 480px) and (max-width: 767px) {
+//   .newsletter {
+//   }
+// }
+@media (min-width: 768px) and (max-width: 1200px) {
+  .newsletter {
+    display: inline-block;
+  }
+}
+@media (min-width: 1200px) {
+  .newsletter {
+    margin-left: 50px;
+  }
+}

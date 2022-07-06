@@ -1,0 +1,168 @@
+.backdrop {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.1);
+  transition-property: opacity, visibility;
+  @extend %transition;
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 450px;
+  min-height: 581px;
+  background-color: #fff;
+
+  @media screen and (min-width: 480px) and (max-width: 767px) {
+    .modal {
+      width: 450px;
+    }
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1200px) {
+    .modal {
+      width: 450px;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    .modal {
+      width: 528px;
+    }
+  }
+
+  .close-btn {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 1;
+  }
+
+  &__icon-close {
+    position: absolute;
+    width: 11px;
+    height: 11px;
+    bottom: 8px;
+    right: 8px;
+  }
+
+  &__form {
+    position: relative;
+    padding: 40px;
+  }
+
+  &__tittle {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    color: #212121;
+    margin-bottom: 12px;
+    text-align: center;
+  }
+
+  &__input {
+    position: relative;
+    width: 100%;
+    height: 40px;
+    margin-bottom: 10px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.67;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    display: flex;
+    letter-spacing: 0.01em;
+    margin-top: 4px;
+    padding-left: 40px;
+  }
+
+  &__label {
+    position: relative;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.67;
+  }
+
+  &__icon {
+    position: absolute;
+    top: 51%;
+    left: 23px;
+    transform: translate(-50%, -50%);
+    width: 20px;
+    height: 20px;
+  }
+
+  &__input:focus {
+    outline: 1px solid $hoverColor;
+  }
+
+  &__label:focus-within {
+    fill: $hoverColor;
+  }
+
+  &__textarea {
+    width: 100%;
+    height: 120px;
+    margin-bottom: 20px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.67;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    color: #75757580;
+    letter-spacing: 0.01em;
+    display: flex;
+    align-items: flex-start;
+    align-content: flex-start;
+    margin-top: 4px;
+    padding: 12px 16px;
+  }
+
+  &__textarea:focus-within {
+    outline: 1px solid $hoverColor;
+  }
+
+  &__checkbox {
+    cursor: pointer;
+    width: 16px;
+    height: 15px;
+    appearance: none;
+    background-image: url(../images/square.svg);
+    &:checked {
+      appearance: none;
+      background-color: #2196f3;
+      background-image: url(../images/check.svg);
+      background-position: 50% 50%;
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+  }
+
+  &__checkbox-text {
+    display: inline-block;
+    margin: 0;
+  }
+
+  &__checkbox-link {
+    color: #2196f3e5;
+    cursor: pointer;
+    text-decoration: underline;
+  }
+}
+
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}

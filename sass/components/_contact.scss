@@ -1,0 +1,79 @@
+.contact {
+  &__link {
+    font-style: normal;
+    text-decoration: none;
+    list-style-type: none;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    color: $brandColor;
+    transition-property: color, fill;
+    @extend %transition;
+  }
+
+  @media screen and (min-width: 480px) and (max-width: 767px) {
+    &__link {
+      display: none;
+      visibility: hidden;
+    }
+  }
+
+  // @media screen and (min-width: 768px) and (max-width: 1200px) {
+  //   &__link {
+  //       }
+  //   }
+
+  @media screen and (min-width: 1200px) {
+    &__link {
+      visibility: inherit;
+    }
+  }
+
+  &__link:hover,
+  &__link:focus {
+    color: $hoverColor;
+    fill: $hoverColor;
+  }
+
+  &__item {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+  }
+
+  &__mail-icon {
+    width: 16px;
+    height: 12px;
+    margin-right: 10px;
+  }
+
+  &__smartphone-icon {
+    width: 10px;
+    height: 16px;
+    margin-right: 10px;
+    margin-left: 30px;
+  }
+}
+
+// @media (min-width: 480px) and (max-width: 767px) {
+//   .contact {
+//   }
+// }
+
+@media (min-width: 768px) and (max-width: 1200px) {
+  .contact {
+    display: flex;
+    list-style: none;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+  }
+}
+
+@media (min-width: 1200px) {
+  .contact {
+    display: flex;
+    list-style: none;
+    justify-content: flex-end;
+    flex-wrap: nowrap;
+  }
+}

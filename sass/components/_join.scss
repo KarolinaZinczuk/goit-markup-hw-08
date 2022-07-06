@@ -1,0 +1,27 @@
+.join {
+  &__tittle {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    margin-top: 10px;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 767px) {
+  .join {
+    margin-top: 60px;
+  }
+}
+
+// @media (min-width: 768px) and (max-width: 1200px) {
+//   .join {
+   
+//   }
+// }
+
+@media (min-width: 1200px) {
+  .join {
+    width: 246px;
+    margin-left: 70px;
+  }
+}

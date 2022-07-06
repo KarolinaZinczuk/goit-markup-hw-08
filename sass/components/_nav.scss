@@ -1,0 +1,53 @@
+.nav {
+  display: flex;
+  list-style: none;
+
+  &__link {
+    font-style: normal;
+    text-decoration: none;
+    list-style-type: none;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    color: $brandColor;
+    position: relative;
+    transition-property: color;
+    @extend %transition;
+  }
+
+  @media (min-width: 480px) and (max-width: 767px) {
+    &__link {
+      display: none;
+      visibility: hidden;
+    }
+  }
+
+  @media (min-width: 768px) and (max-width: 1200px) {
+    &__link {
+      margin-right: 30px;
+      margin-left: 30px;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    &__link {
+      visibility: inherit;
+      margin-right: 46px;
+    }
+  }
+
+  &__link:focus,
+  &__link:hover {
+    color: $hoverColor;
+  }
+}
+
+.activepage::after {
+  content: "";
+  display: block;
+  position: absolute;
+  border-top: 4px solid #2196f3;
+  border-radius: 2px;
+  width: 100%;
+  bottom: -33px;
+}

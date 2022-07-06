@@ -1,0 +1,10 @@
+.header {
+  color: $brandColor;
+  border-bottom: 1px solid #ececec;
+  height: 80px;
+
+  &__position {
+    display: flex;
+    align-items: center;
+  }
+}

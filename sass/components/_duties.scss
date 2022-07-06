@@ -1,0 +1,47 @@
+.duties {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+
+  &__item {
+    position: relative;
+  }
+
+  &__description {
+    color: #fff;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    width: 370px;
+    height: 70px;
+    background: #2f303acc;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .duties {
+    display: none;
+    visibility: hidden;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .duties {
+    display: none;
+    visibility: hidden;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .duties {
+    visibility: inherit;
+  }
+}
