@@ -9,7 +9,7 @@
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
-    color: $brandColor;
+    color: $text-color;
     position: relative;
     transition-property: color;
     @extend %transition;
@@ -38,7 +38,7 @@
 
   &__link:focus,
   &__link:hover {
-    color: $hoverColor;
+    color: $hover-color;
   }
 }
 
@@ -46,7 +46,7 @@
   content: "";
   display: block;
   position: absolute;
-  border-top: 4px solid #2196f3;
+  border-top: 4px solid $brand-color;
   border-radius: 2px;
   width: 100%;
   bottom: -33px;

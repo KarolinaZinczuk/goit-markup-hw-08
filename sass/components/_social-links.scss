@@ -10,7 +10,7 @@
   }
 
   &__icon {
-    fill: $iconColor;
+    fill: $social-link-icon-color;
     width: 20px;
     height: 20px;
     transition-property: fill;
@@ -24,19 +24,19 @@
     width: 44px;
     height: 44px;
     border-radius: 50%;
-    background-color: $iconBgColor;
+    background-color: $social-link-icon-color-bg;
     transition-property: background-color;
     @extend %transition;
   }
 
   &__link:hover,
   &__link:focus {
-    background-color: $hoverColor;
+    background-color: $social-link-icon-color-bg-hover;
   }
 
   &__link:hover &__icon,
   &__link:focus &__icon {
-    fill: #fff;
+    fill: $social-link-icon-color-bg;
   }
 
   // &--footer {
@@ -59,15 +59,15 @@
   }
 
   &__link--footer {
-    background-color: #ffffff1a;
+    background-color: $social-link-icon-color-bg-footer;
   }
 
   &__icon--footer {
-    fill: #fff;
+    fill: $social-link-icon-color-footer;
   }
 
   &__link--footer:hover,
   &__link--footer:focus {
-    background-color: $hoverColor;
+    background-color: $social-list-icon-color-bg-hover-footer;
   }
 }

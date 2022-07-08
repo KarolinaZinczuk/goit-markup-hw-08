@@ -1,14 +1,227 @@
-$brandColor: #212121;
-$hoverColor: #2196f3;
-$buttonBgColor: #2196f3;
-$logoColorHeader: #000;
-$logoColorFooter: #fff;
-$logoColorAccent: #2196f3;
-$bgColor: #fff;
-$iconColor: #afb1b8;
-$iconBgColor: #fff;
+///=== Fonts ===///
 
 %font-temple {
   font-family: "Roboto", "Raleway", sans-serif;
 }
+
+///=== Colors ===///
+
+// Body background color
+$body-bg-color: #fff;
+
+// Main text color
+$text-color: #212121;
+
+// Secondary text color
+$secondary-text-color: #757575;
+
+// Main brand color
+$brand-color: #2196f3;
+
+// Header bottom border color
+$header-border-color: #ececec;
+
+// Header background color
+$header-bg-color: #fff;
+
+//Main hover color
+$hover-color: #2196f3;
+
+//Heading
+
+// Heading background color
+$heading-bg-color: #2f303a;
+
+// Heading tittle color
+$heading-tittle-color: #fff;
+
+//Options
+
+// Options text color
+$options-text-color: #757575;
+
+// Options background color
+$options-bg-color: #f5f4fa;
+
+//Duties
+
+// Duties heading color
+$duties-heading-color: #fff;
+
+// Duties heading background
+$duties-heading-bg: #2f303acc;
+
+//Team
+
+// Team background color
+$team-background-color: #f5f4fa;
+
+// Team figure background color
+$team-figure-bg-color: #fff;
+
+// Team text color
+$team-text-color: #757575;
+
+//Customers
+
+// Customers border color
+$customers-border-color: #afb1b8;
+
+// Customers icon color
+$customers-icon-color: #afb1b8;
+
+// Customers color hover
+$customers-color-hover: #2196f3;
+
+// Customers background color
+$customers-bg-color: #2196f3;
+
+//Social link
+
+// Social link icon color
+$social-link-icon-color: #afb1b8;
+
+// Social link icon color hover
+$social-link-icon-color-hover: #fff;
+
+// Social link icon color footer
+$social-link-icon-color-footer: #fff;
+
+// Social link icon color bg
+$social-link-icon-color-bg: #fff;
+
+// Social link icon color bg footer
+$social-link-icon-color-bg-footer: rgba(255, 255, 255, 0.1);
+
+// Social link icon color bg hover
+$social-link-icon-color-bg-hover: #2196f3;
+
+// Social link icon color bg hover footer
+$social-link-icon-color-bg-hover-footer: #2196f3;
+
+//Team
+
+// Team text color
+$solutions-text-color: #757575;
+
+//Solutions
+
+// Solutions background color
+$solutions-bg-color: #fff;
+
+// Solutions border color
+$solutions-border-color: #fff;
+
+// Solutions overlay color
+$solutions-overlay-color: #fff;
+
+// Solutions overlay bg color
+$solutions-overlay-bg-color: #2196f3e5;
+
+//Footer
+
+// Footer background color
+$footer-bg-color: #2f303a;
+
+// Footer text color
+$footer-text-color: #fff;
+
+// Footer address link color
+$footer-address-link-color: rgba(255, 255, 255, 0.6);
+
+// Footer address link hover color
+$footer-address-link-hover-color: rgba(255, 255, 255, 1);
+
+//Newsletter
+
+// Newsletter input bg color
+$newsletter-input-bg-color: transparent;
+
+// Newsletter border color
+$newsletter-border-color: #ffffff4d;
+
+// Newsletter border color hover
+$newsletter-border-color-hover: #fff;
+
+// Newsletter color
+$newsletter-color: rgba(255, 255, 255, 0.6);
+
+// Newsletter text color
+$newsletter-text-color: #fff;
+
+// Newsletter shadow color
+$newsletter-shadow-color: rgba(0, 0, 0, 0.15);
+
+//Logo
+
+// Logo main color
+$logo-main-color: #2196f3;
+
+// Logo secondary dark color
+$logo-secondary-dark-color: #212121;
+
+// Logo secondary light color
+$logo-secondary-light-color: #fff;
+
+//Button
+
+// Button background color
+$btn-bg-color: #2196f3;
+
+// Button text color
+$btn-color: #fff;
+
+// Button icon color
+$btn-icon-color: #fff;
+
+// Button filter background color
+$btn-filter-bg-color: #f5f4fa;
+
+// Button filter text color
+$btn-filter-text-color: #212121;
+
+// Button filter text color hover
+$btn-filter-text-color-hover: #fff;
+
+//Modal
+
+// Modal backdrop background color
+$modal-backdrop-bg-color: hsla(0, 0%, 0%, 0.2);
+
+// Modal window background color
+$modal-window-bg-color: #fff;
+
+//Modal tittle color
+$modal-tittle-color: #212121;
+
+// Close button border color
+$close-btn-border-color: #0000001a;
+
+// Signup form input border color
+$signup-form-input-border-color: rgba(33, 33, 33, 0.2);
+
+// Signup form input border color
+$signup-form-textarea-border-color: rgba(33, 33, 33, 0.2);
+
+// Signup form textarea placeholder color
+$signup-form-textarea-placeholder-color: rgba(117, 117, 117, 0.5);
+
+// Checkbox
+
+// Checkbox link color
+$cheackbox-link-color: #2196f3e5;
+
+// Checkbox background color
+$cheackbox-bg-color: #2196f3e5;
+
+//Mobile menu
+
+  // Mobile menu background color
+  $mobile-menu-bg-color: #fff;
+
+  // Mobile menu button color
+  $mobile-menu-btn-open-color: #212121;
+  $mobile-menu-btn-close-color: #212121;
+
+
 

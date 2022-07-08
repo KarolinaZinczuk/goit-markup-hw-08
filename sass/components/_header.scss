@@ -1,6 +1,6 @@
 .header {
-  color: $brandColor;
-  border-bottom: 1px solid #ececec;
+  color: $text-color;
+  border-bottom: 1px solid $header-border-color;
   height: 80px;
 
   &__position {
