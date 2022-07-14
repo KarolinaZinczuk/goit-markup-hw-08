@@ -197,14 +197,14 @@ $modal-tittle-color: #212121;
 // Close button border color
 $close-btn-border-color: #0000001a;
 
-// Signup form input border color
-$signup-form-input-border-color: rgba(33, 33, 33, 0.2);
+// Modal input border color
+$modal-input-border-color: rgba(33, 33, 33, 0.2);
 
-// Signup form input border color
-$signup-form-textarea-border-color: rgba(33, 33, 33, 0.2);
+// Modal input border color
+$modal-textarea-border-color: rgba(33, 33, 33, 0.2);
 
-// Signup form textarea placeholder color
-$signup-form-textarea-placeholder-color: rgba(117, 117, 117, 0.5);
+// Modal textarea placeholder color
+$modal-textarea-placeholder-color: rgba(117, 117, 117, 0.5);
 
 // Checkbox
 
@@ -216,12 +216,9 @@ $cheackbox-bg-color: #2196f3e5;
 
 //Mobile menu
 
-  // Mobile menu background color
-  $mobile-menu-bg-color: #fff;
+// Mobile menu background color
+$mobile-menu-bg-color: #fff;
 
-  // Mobile menu button color
-  $mobile-menu-btn-open-color: #212121;
-  $mobile-menu-btn-close-color: #212121;
-
-
-
+// Mobile menu button color
+$mobile-menu-btn-open-color: #212121;
+$mobile-menu-btn-close-color: #212121;

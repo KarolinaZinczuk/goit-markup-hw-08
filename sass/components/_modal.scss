@@ -29,6 +29,7 @@
     width: 30px;
     height: 30px;
     border: 1px solid $close-btn-border-color;
+    background-color: transparent;
     border-radius: 50%;
     cursor: pointer;
     z-index: 1;
@@ -63,8 +64,8 @@
     margin-bottom: 10px;
     font-weight: 400;
     font-size: 12px;
-    line-height: 1.67;
-    border: 1px solid $signup-form-input-border-color;
+    line-height: 1.17;
+    border: 1px solid $modal-input-border-color;
     border-radius: 4px;
     display: flex;
     letter-spacing: 0.01em;
@@ -76,7 +77,7 @@
     position: relative;
     font-weight: 400;
     font-size: 12px;
-    line-height: 1.67;
+    line-height: 1.17;
   }
 
   &__icon {
@@ -101,11 +102,11 @@
     height: 120px;
     margin-bottom: 20px;
     font-weight: 400;
-    font-size: 12px;
-    line-height: 1.67;
-    border: 1px solid $signup-form-textarea-border-color;
+    font-size: 14px;
+    line-height: 1.14;
+    border: 1px solid $modal-textarea-border-color;
     border-radius: 4px;
-    color: $signup-form-textarea-placeholder-color;
+    color: $modal-textarea-placeholder-color;
     letter-spacing: 0.01em;
     display: flex;
     align-items: flex-start;
@@ -137,6 +138,16 @@
   &__checkbox-text {
     display: inline-block;
     margin: 0;
+    margin-left: 8px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+
+    @media (min-width: 1200px) {
+      font-size: 14px;
+      line-height: 1.71;
+    }
   }
 
   &__checkbox-link {

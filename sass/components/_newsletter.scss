@@ -1,10 +1,31 @@
 .newsletter {
+  @media (min-width: 768px) and (max-width: 1199px) {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  @media (min-width: 1200px) {
+    margin-left: 50px;
+  }
+
   &__tittle {
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
     margin-top: 10px;
     margin-bottom: 20px;
+  }
+
+  &__label {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 20px;
+
+    @media (min-width: 1200px) {
+      display: inline;
+      margin-bottom: 0px;
+    }
   }
 
   &__input {
@@ -35,17 +56,5 @@
     height: 24px;
     padding-left: 24px;
     bottom: 13px;
-  }
-}
-
-@media (min-width: 768px) and (max-width: 1200px) {
-  .newsletter {
-    flex: 0 0 100%;
-    max-width: 100%;
-  }
-}
-@media (min-width: 1200px) {
-  .newsletter {
-    margin-left: 50px;
   }
 }

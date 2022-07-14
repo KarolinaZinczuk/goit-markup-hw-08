@@ -356,6 +356,7 @@
         </section>
 <!-- customers -->
         <section class="section">
+          <div class="container">
           <h2 class="section__title">Nasi klienci</h2>
           <ul class="customers">
             <li class="customers__item">
@@ -401,13 +402,14 @@
               </a>
             </li>
           </ul>
+        </div>
         </section>
       </div>
     </main>
     <!-- footer --> 
     <footer class="footer-bg">
       <div class="container footer">
-        <div> 
+        <div class="footer-container"> 
         <a class="logo logo--footer" href="/index.html"><span class="logo logo--accent">Web</span>studio</a>
         <p class="footer__description">
           m. Warszawa, Aleje Jerozolimskie 21
@@ -465,7 +467,7 @@
         <div class="newsletter">
           <h5 class="newsletter__tittle">ZAPISZ SIĘ DO NEWSLETTERA</h5>
             <form class="" name="newsletter">
-            <label><input class="newsletter__input" type="emial" name="email-newsletter" placeholder="E-mail"></label>
+            <label class="newsletter__label"><input class="newsletter__input" type="emial" name="email-newsletter" placeholder="E-mail"></label>
             <button class="button button--newsletter " type="submit" >Zapisz się
               <a class="newsletter__link">
                 <svg>
@@ -506,7 +508,7 @@
                 <use href="./images/icon.svg#icon-email"></use>
               </svg>      
           </label>
-          <label>Komentarz
+          <label class="modal__label">Komentarz
             <textarea class="modal__textarea" rows="5" name="comment" placeholder="Wprowadź tekst"></textarea>
           </label>          
           <label>
@@ -518,42 +520,64 @@
         </form>
       </div>    
     </div>
+<!-- mobile menu -->
+<div class="mobile-menu js-menu-container" id="mobile-menu">
+  <button class="mobile-menu__btn-close js-close-menu">
+    <svg class="mobile-menu__icon" viewBox="0 0 19 19">
+      <use href="images/icons.svg#btn-mobile-menu-close"></use>
+    </svg>
+  </button>
 
-    <div class="mobile-menu js-menu-container is-open" id="mobile-menu">
-      <button class="mobile-menu__btn-close js-close-menu">
-        <svg class="mobile-menu__icon" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" width="24" height="24">
-          <path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path>
-        </svg>
-      </button>
-      <ul class="mobile-menu__list">
-        <li class="mobile-menu__item mobile-menu__item--margin-bottom"><a href="" class="mobile-menu__link">Agencja</a></li>
-        <li class="mobile-menu__item mobile-menu__item--margin-bottom"><a href="" class="mobile-menu__link">Portfolio</a></li>
-        <li class="mobile-menu__item mobile-menu__item--margin-bottom"><a href="" class="mobile-menu__link">Kontakt</a></li>    
-      </ul>
-      <ul class="mobile-menu__social-list">
-        <li>
-          <a href="" class="mobile-menu__social-link">instagram</a>
-        </li>
-        <li>
-          <svg class="mobile-menu__social-icon"><use href="images/icons.svg#icon-vertical-line"></use></svg>
-        </li>
-        <li>
-          <a href="" class="mobile-menu__social-link">twitter</a>
-        </li>
-        <li>
-          <svg class="mobile-menu__social-icon"><use href="images/icons.svg#icon-vertical-line"></use></svg>
-        </li>
-        <li>
-          <a href="" class="mobile-menu__social-link">facebook</a>
-        </li>
-        <li>
-          <svg class="mobile-menu__social-icon"><use href="images/icons.svg#icon-vertical-line"></use></svg>
-        </li>
-        <li><a href="" class="mobile-menu__social-link">linkedin</a></li>
-      </ul>
-    </div>
+  <ul class="mobile-menu__list">
+    <li class="mobile-menu__item mobile-menu__item--margin-bottom">
+      <a href="index.html" class="mobile-menu__link mobile-menu__link--current-page">Agencja</a>
+    </li>
+    <li class="mobile-menu__item mobile-menu__item--margin-bottom">
+      <a href="portfolio.html" class="mobile-menu__link">Portfolio</a>
+    </li>
+    <li class="mobile-menu__item mobile-menu__item--margin-bottom">
+      <a href="" class="mobile-menu__link">Kontakt</a>
+    </li>
+  </ul>
+
+  <div class="mobile-menu__contact">
+    <ul class="mobile-menu__list mobile-menu__list--margin-bottom">
+      <li class="mobile-menu__item mobile-menu__item--margin-bottom">
+        <a href="tel:+48111111111" class="mobile-menu__link mobile-menu__link--phone">+48 111 111 111</a>
+      </li>
+      <li class="mobile-menu__item mobile-menu__item--margin-bottom">
+        <a href="mailto:info@devstudio.com" class="mobile-menu__link mobile-menu__link--email"
+          >info@devstudio.com</a
+        >
+      </li>
+    </ul>
+
+    <ul class="mobile-menu__social-list">
+      <li>
+        <a href="" class="mobile-menu__social-link">instagram</a>
+      </li>
+      <li>
+        <svg class="mobile-menu__social-icon"><use href="images/icons.svg#icon-vertical-line"></use></svg>
+      </li>
+      <li>
+        <a href="" class="mobile-menu__social-link">twitter</a>
+      </li>
+      <li>
+        <svg class="mobile-menu__social-icon"><use href="images/icons.svg#icon-vertical-line"></use></svg>
+      </li>
+      <li>
+        <a href="" class="mobile-menu__social-link">facebook</a>
+      </li>
+      <li>
+        <svg class="mobile-menu__social-icon"><use href="images/icons.svg#icon-vertical-line"></use></svg>
+      </li>
+      <li><a href="" class="mobile-menu__social-link">linkedin</a></li>
+    </ul>
+  </div>
+</div>
     <script src="./js/modal.js"></script>
     <script src="./js/mobile-menu.js"></script>
+    <script src="js/body-scroll-lock.js"></script>
   </body>
 </html>
 

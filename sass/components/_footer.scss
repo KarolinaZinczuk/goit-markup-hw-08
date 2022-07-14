@@ -9,8 +9,7 @@
   text-align: center;
 
   @media (min-width: 768px) and (max-width: 1199px) {
-    flex: 0 0 50%;
-    max-width: 50%;
+    flex-wrap: wrap;
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
@@ -57,5 +56,12 @@
 
   &__link--address {
     color: $footer-address-link-color;
+  }
+}
+
+.footer-container {
+  @media (min-width: 768px) and (max-width: 1199px) {
+    flex: 0 0 50%;
+    max-width: 50%;
   }
 }

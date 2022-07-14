@@ -91,7 +91,7 @@
           </ul>
         </section>
         <!-- <solutions> -->
-        <section class="solutions solution-position section">
+        <section class="solution-position">
           <ul class="solutions">
             <li class="solutions__item">
               <figure class="solutions__figure">
@@ -104,8 +104,6 @@
                     images/solution1desktop.jpg 370w
                   "
                   alt="laptop na którym wyświetlone są zdjęcia trzech pracwników"
-                  width="370"
-                  height="294"
                 />
                 <div class="overlay">
                   <p class="overlay__position">
@@ -132,8 +130,6 @@
                     images/solution2desktop.jpg 370w
                   "
                   alt="dwóch mężczyzn rywalizuje o piłkę do koszykówki"
-                  width="370"
-                  height="294"
                 />
                 <div class="overlay">
                   <p class="overlay__position">
@@ -162,8 +158,6 @@
                     images/solution3desktop.jpg 370w
                   "
                   alt="logo restauracji z owocami morza"
-                  width="370"
-                  height="294"
                 />
                 <div class="overlay">
                   <p class="overlay__position">
@@ -190,8 +184,6 @@
                     images/solution4desktop.jpg 370w
                   "
                   alt="słuchawki czarne nauszne"
-                  width="370"
-                  height="294"
                 />
                 <div class="overlay">
                   <p class="overlay__position">
@@ -218,8 +210,6 @@
                     images/solution5desktop.jpg 370w
                   "
                   alt="dwa pudełka, jedno beżowe, drugie białe"
-                  width="370"
-                  height="294"
                 />
                 <div class="overlay">
                   <p class="overlay__position">
@@ -246,8 +236,6 @@
                     images/solution6desktop.jpg 370w
                   "
                   alt="czarny monitor z wyśietloną mapą świata"
-                  width="370"
-                  height="294"
                 />
                 <div class="overlay">
                   <p class="overlay__position">
@@ -274,8 +262,6 @@
                     images/solution7desktop.jpg 370w
                   "
                   alt="magazyn"
-                  width="370"
-                  height="294"
                 />
                 <div class="overlay">
                   <p class="overlay__position">
@@ -302,8 +288,6 @@
                     images/solution8desktop.jpg 370w
                   "
                   alt="zawieszka LAB"
-                  width="370"
-                  height="294"
                 />
                 <div class="overlay">
                   <p class="overlay__position">
@@ -330,8 +314,6 @@
                     images/solution1desktop.jpg 370w
                   "
                   alt="osoba piszę na laptopie"
-                  width="370"
-                  height="294"
                 />
                 <div class="overlay">
                   <p class="overlay__position">
@@ -354,7 +336,7 @@
     <!-- footer -->
     <footer class="footer-bg">
       <div class="container footer">
-        <div>
+        <div class="footer-container">
           <a class="logo logo--footer" href="/index.html"
             ><span class="logo logo--accent">Web</span>studio</a
           >
@@ -412,7 +394,7 @@
         <div class="newsletter">
           <h5 class="newsletter__tittle">ZAPISZ SIĘ DO NEWSLETTERA</h5>
           <form class="" name="newsletter">
-            <label
+            <label class="newsletter__label"
               ><input
                 class="newsletter__input"
                 type="emial"
@@ -431,7 +413,79 @@
         </div>
       </div>
     </footer>
+    <!-- mobile menu -->
+    <div class="mobile-menu js-menu-container" id="mobile-menu">
+      <button class="mobile-menu__btn-close js-close-menu">
+        <svg class="mobile-menu__icon" viewBox="0 0 19 19">
+          <use href="images/icons.svg#btn-mobile-menu-close"></use>
+        </svg>
+      </button>
+
+      <ul class="mobile-menu__list">
+        <li class="mobile-menu__item mobile-menu__item--margin-bottom">
+          <a
+            href="index.html"
+            class="mobile-menu__link mobile-menu__link--current-page"
+            >Agencja</a
+          >
+        </li>
+        <li class="mobile-menu__item mobile-menu__item--margin-bottom">
+          <a href="portfolio.html" class="mobile-menu__link">Portfolio</a>
+        </li>
+        <li class="mobile-menu__item mobile-menu__item--margin-bottom">
+          <a href="" class="mobile-menu__link">Kontakt</a>
+        </li>
+      </ul>
+
+      <div class="mobile-menu__contact">
+        <ul class="mobile-menu__list mobile-menu__list--margin-bottom">
+          <li class="mobile-menu__item mobile-menu__item--margin-bottom">
+            <a
+              href="tel:+48111111111"
+              class="mobile-menu__link mobile-menu__link--phone"
+              >+48 111 111 111</a
+            >
+          </li>
+          <li class="mobile-menu__item mobile-menu__item--margin-bottom">
+            <a
+              href="mailto:info@devstudio.com"
+              class="mobile-menu__link mobile-menu__link--email"
+              >info@devstudio.com</a
+            >
+          </li>
+        </ul>
+
+        <ul class="mobile-menu__social-list">
+          <li>
+            <a href="" class="mobile-menu__social-link">instagram</a>
+          </li>
+          <li>
+            <svg class="mobile-menu__social-icon">
+              <use href="images/icons.svg#icon-vertical-line"></use>
+            </svg>
+          </li>
+          <li>
+            <a href="" class="mobile-menu__social-link">twitter</a>
+          </li>
+          <li>
+            <svg class="mobile-menu__social-icon">
+              <use href="images/icons.svg#icon-vertical-line"></use>
+            </svg>
+          </li>
+          <li>
+            <a href="" class="mobile-menu__social-link">facebook</a>
+          </li>
+          <li>
+            <svg class="mobile-menu__social-icon">
+              <use href="images/icons.svg#icon-vertical-line"></use>
+            </svg>
+          </li>
+          <li><a href="" class="mobile-menu__social-link">linkedin</a></li>
+        </ul>
+      </div>
+    </div>
     <script src="./js/modal.js"></script>
     <script src="./js/mobile-menu.js"></script>
+    <script src="js/body-scroll-lock.js"></script>
   </body>
 </html>
