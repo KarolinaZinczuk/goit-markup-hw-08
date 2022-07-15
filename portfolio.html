@@ -4,14 +4,17 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <!--fonts-->
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+
     <!--css-->
     <link rel="stylesheet" href="css/modern-normalize.css" />
     <link rel="stylesheet" href="./css/main.min.css" />
+
     <!--document title-->
     <title>Document</title>
   </head>
@@ -23,18 +26,24 @@
         <a class="logo logo--header" href="index.html"
           ><span class="logo logo--accent"> Web</span>Studio</a
         >
+
         <!--main navigation-->
         <nav>
           <ul class="nav">
-            <li><a class="nav__link" href="index.html">Agencja</a></li>
-            <li>
-              <a class="nav__link activepage" href="portfolio.html "
-                >Portfolio</a
+            <li class="nav__item nav__item--space-between">
+              <a class="nav__link nav__link--activepage" href="index.html"
+                >Agencja</a
               >
             </li>
-            <li><a class="nav__link" href="">Kontakt</a></li>
+            <li class="nav__item nav__item--space-between">
+              <a class="nav__link" href="portfolio.html ">Portfolio</a>
+            </li>
+            <li class="nav__item nav__item--space-between">
+              <a class="nav__link" href="">Kontakt</a>
+            </li>
           </ul>
         </nav>
+
         <!--contact-->
         <address>
           <ul class="contact">
@@ -56,8 +65,17 @@
             </li>
           </ul>
         </address>
+
+        <!-- Button burger -->
+        <button class="button button--burger" type="button">
+          <svg class="button__icon js-open-menu" viewBox="0 0 24 16">
+            <use href="images/icon.svg#btn-mobile-menu"></use>
+          </svg>
+        </button>
       </div>
     </header>
+
+    <!-- main -->
     <main>
       <div class="container">
         <!-- button menu -->
@@ -90,6 +108,7 @@
             </li>
           </ul>
         </section>
+
         <!-- <solutions> -->
         <section class="solution-position">
           <ul class="solutions">
@@ -333,6 +352,7 @@
         </section>
       </div>
     </main>
+
     <!-- footer -->
     <footer class="footer-bg">
       <div class="container footer">
@@ -344,18 +364,23 @@
           <address>
             <ul>
               <li>
-                <a class="footer__link" href="mailto:info@devstudio.com"
+                <a
+                  class="footer__link footer__link--address"
+                  href="mailto:info@devstudio.com"
                   >info@devstudio.com</a
                 >
               </li>
               <li class="footer__list">
-                <a class="footer__link" href="tel:+48111111111"
+                <a
+                  class="footer__link footer__link--address"
+                  href="tel:+48111111111"
                   >+48 111 111 111</a
                 >
               </li>
             </ul>
           </address>
         </div>
+
         <!-- footer-join -->
         <div class="join">
           <h5 class="join__tittle">DOŁĄCZ DO NAS</h5>
@@ -390,10 +415,11 @@
             </li>
           </ul>
         </div>
+
         <!-- Newsletter -->
         <div class="newsletter">
           <h5 class="newsletter__tittle">ZAPISZ SIĘ DO NEWSLETTERA</h5>
-          <form class="" name="newsletter">
+          <form class="newsletter__form" name="newsletter">
             <label class="newsletter__label"
               ><input
                 class="newsletter__input"
@@ -403,34 +429,33 @@
             /></label>
             <button class="button button--newsletter" type="submit">
               Zapisz się
-              <a class="newsletter__link">
-                <svg>
-                  <use href="./images/icon.svg#icon-send"></use>
-                </svg>
-              </a>
+              <svg class="newsletter__icon">
+                <use href="./images/icon.svg#icon-send"></use>
+              </svg>
             </button>
           </form>
         </div>
       </div>
     </footer>
+
     <!-- mobile menu -->
     <div class="mobile-menu js-menu-container" id="mobile-menu">
       <button class="mobile-menu__btn-close js-close-menu">
         <svg class="mobile-menu__icon" viewBox="0 0 19 19">
-          <use href="images/icons.svg#btn-mobile-menu-close"></use>
+          <use href="images/icon.svg#btn-mobile-menu-close"></use>
         </svg>
       </button>
 
       <ul class="mobile-menu__list">
         <li class="mobile-menu__item mobile-menu__item--margin-bottom">
-          <a
-            href="index.html"
-            class="mobile-menu__link mobile-menu__link--current-page"
-            >Agencja</a
-          >
+          <a href="index.html" class="mobile-menu__link">Agencja</a>
         </li>
         <li class="mobile-menu__item mobile-menu__item--margin-bottom">
-          <a href="portfolio.html" class="mobile-menu__link">Portfolio</a>
+          <a
+            href="portfolio.html"
+            class="mobile-menu__link mobile-menu__link--current-page"
+            >Portfolio</a
+          >
         </li>
         <li class="mobile-menu__item mobile-menu__item--margin-bottom">
           <a href="" class="mobile-menu__link">Kontakt</a>
@@ -461,7 +486,7 @@
           </li>
           <li>
             <svg class="mobile-menu__social-icon">
-              <use href="images/icons.svg#icon-vertical-line"></use>
+              <use href="images/icon.svg#icon-vertical-line"></use>
             </svg>
           </li>
           <li>
@@ -469,7 +494,7 @@
           </li>
           <li>
             <svg class="mobile-menu__social-icon">
-              <use href="images/icons.svg#icon-vertical-line"></use>
+              <use href="images/icon.svg#icon-vertical-line"></use>
             </svg>
           </li>
           <li>
@@ -477,7 +502,7 @@
           </li>
           <li>
             <svg class="mobile-menu__social-icon">
-              <use href="images/icons.svg#icon-vertical-line"></use>
+              <use href="images/icon.svg#icon-vertical-line"></use>
             </svg>
           </li>
           <li><a href="" class="mobile-menu__social-link">linkedin</a></li>

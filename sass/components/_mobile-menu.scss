@@ -93,7 +93,6 @@
 
   &__contact {
     flex-grow: 0;
-    margin-top: 302px;
   }
 
   &__social-list {
@@ -160,15 +159,10 @@
     fill: currentColor;
   }
 
-  @media (min-width: 768px) and (max-width: 1199px) {
-    .mobile-menu {
-      display: none;
-    }
-  }
+}
 
-  @media (min-width: 1200px) {
-    .mobile-menu {
-      display: none;
-    }
-  }
+.js-menu-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }

@@ -16,11 +16,18 @@
     margin-bottom: 20px;
   }
 
+  &__form {
+    @media (min-width: 1200px) {
+      display: flex;
+    }
+  }
+
   &__label {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     margin-bottom: 20px;
+    position: relative;
 
     @media (min-width: 1200px) {
       display: inline;
@@ -49,12 +56,12 @@
     }
   }
 
-  &__link {
+  &__icon {
     position: absolute;
     fill: $newsletter-text-color;
     width: 24px;
     height: 24px;
-    padding-left: 24px;
-    bottom: 13px;
+    right: 35px;
+    top: 12px;
   }
 }
