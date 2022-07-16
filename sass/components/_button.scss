@@ -16,9 +16,21 @@
   &-position {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    margin-top: 94px;
-    margin-bottom: 50px;
+    margin-top: 60px;
+
+    @media (min-width: 768px) and (max-width: 1199px) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 60px;
+    }
+
+    @media (min-width: 1200px) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 94px;
+    }
   }
 
   &--filters {
@@ -31,6 +43,14 @@
     margin-right: 4px;
     margin-left: 4px;
     margin-bottom: 15px;
+
+    @media (min-width: 768px) and (max-width: 1199px) {
+      margin-bottom: 0px;
+    }
+
+    @media (min-width: 1200px) {
+      margin-bottom: 0px;
+    }
   }
 
   &--filters:hover {

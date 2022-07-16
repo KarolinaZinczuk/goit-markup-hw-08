@@ -14,12 +14,12 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 450px;
+  max-width: 450px;
   min-height: 581px;
   background-color: $modal-window-bg-color;
 
   @media (min-width: 1200px) {
-    width: 528px;
+    min-width: 528px;
   }
 
   .close-btn {
