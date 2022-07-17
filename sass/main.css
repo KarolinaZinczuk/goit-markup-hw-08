@@ -78,6 +78,8 @@ body {
   border: none;
   background-color: transparent;
   box-shadow: none;
+  padding: 0;
+  padding-right: 8px;
   width: 40px;
   height: 40px;
   cursor: pointer;
@@ -385,11 +387,11 @@ address {
   margin-bottom: 30px;
   margin-left: auto;
   margin-right: auto;
-  width: 365px;
+  max-width: 365px;
 }
 @media (min-width: 1200px) {
   .heading__title {
-    width: 696px;
+    min-width: 696px;
     font-size: 44px;
     line-height: 1.36;
   }
@@ -888,7 +890,7 @@ address {
 .social-link__link:hover .social-link__icon, .social-link__link:focus .social-link__icon {
   fill: #fff;
 }
-@media (min-width: 480px) and (max-width: 767px) {
+@media (max-width: 767px) {
   .social-link--footer {
     margin-bottom: 60px;
   }
